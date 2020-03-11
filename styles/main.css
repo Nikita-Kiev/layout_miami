@@ -331,7 +331,7 @@ html, body, ul, li, button, input, textarea, button {
       position: absolute;
       width: 40px;
       height: 33px;
-      background-image: url("/images/quotes.svg");
+      background-image: url("../images/quotes.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -389,7 +389,8 @@ html, body, ul, li, button, input, textarea, button {
   .footer__logo {
     position: absolute;
     left: 50%;
-    bottom: 95px; }
+    bottom: 95px;
+    border: none; }
 
 body {
   background: #eee; }
