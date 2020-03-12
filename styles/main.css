@@ -385,12 +385,12 @@ html, body, ul, li, button, input, textarea, button {
     background-image: url("../images/footer.jpg");
     height: 540px;
     width: 100%;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
   .footer__logo {
     position: absolute;
     left: 50%;
-    bottom: 95px;
-    border: none; }
+    bottom: 95px; }
 
 body {
   background: #eee; }
