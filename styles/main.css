@@ -73,6 +73,9 @@ html, body, ul, li, button, input, textarea, button {
     color: white; }
   .header__phone {
     margin: 0 82px; }
+    .header__phone a {
+      text-decoration: none;
+      color: white; }
   .header__phone, .header__action {
     position: relative;
     top: 47px; }
@@ -116,7 +119,7 @@ html, body, ul, li, button, input, textarea, button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .section:nth-child(even) {
+  .section:nth-child(odd) {
     background-color: #EEEEEE; }
   .section__heading {
     font-size: 48px;
@@ -145,7 +148,8 @@ html, body, ul, li, button, input, textarea, button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 100px; } }
+    padding-top: 100px;
+    padding: 100px 10px; } }
 
 .info {
   display: -webkit-box;
@@ -153,7 +157,9 @@ html, body, ul, li, button, input, textarea, button {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 110px; }
   .info__heading {
     width: 314px;
     font-weight: 300;
@@ -227,6 +233,9 @@ html, body, ul, li, button, input, textarea, button {
   background-color: #00AAEF;
   text-transform: uppercase;
   border: none; }
+  .gallary__btn:hover {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 .consultation {
   display: -webkit-box;
@@ -237,6 +246,7 @@ html, body, ul, li, button, input, textarea, button {
           justify-content: space-between; }
   .consultation__text {
     width: 480px;
+    max-width: 100%;
     font-size: 16px;
     line-height: 28px; }
   .consultation__heading {
@@ -267,7 +277,8 @@ html, body, ul, li, button, input, textarea, button {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  max-width: 100%; }
   .form__item {
     margin-bottom: 8px; }
   .form__input, .form__button {
@@ -284,22 +295,27 @@ html, body, ul, li, button, input, textarea, button {
     color: inherit; }
   .form__input {
     height: 54px;
-    background-color: #EEEEEE;
+    background-color: #f0efef;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 14px;
     line-height: 36px; }
   .form__textarea {
-    height: 156px; }
+    height: 156px;
+    resize: none; }
   .form__button {
     height: 54px;
+    max-width: 100%;
     background-color: #00AAEF;
     font-weight: 500;
     font-size: 14px;
     line-height: 36px;
     color: white;
     text-transform: uppercase; }
+    .form__button:hover {
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 .testimonials {
   display: grid;
@@ -312,7 +328,8 @@ html, body, ul, li, button, input, textarea, button {
 .person {
   text-align: center;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  margin-bottom: -25px; }
   .person__photo {
     width: 150px;
     height: 150px;
@@ -389,10 +406,14 @@ html, body, ul, li, button, input, textarea, button {
     background-position: center; }
   .footer__logo {
     position: absolute;
-    left: 50%;
+    left: calc(50% - 57px);
     bottom: 95px; }
 
 body {
   background: #eee; }
+
+main {
+  max-width: 100%;
+  overflow-y: hidden; }
 
 /*# sourceMappingURL=main.css.map */

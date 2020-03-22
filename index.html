@@ -12,26 +12,27 @@
     <header class='header'>
       <div class='header__top'>
         <div class='logo header__logo' href="./images/logo.png"></div>
-        <div class='header__phone'>+1 234 555-55-55</div>
-        <div class='header__action'><a href="#" class='header__link'>Call to oreder</a></div>
+        <div class='header__phone'> <a href="tel:+1 234 555-55-55"
+          >+1 234 555-55-55</a></div>
+        <div class='header__action'><a href="tel:+1 234 555-55-55" class='header__link'>Call to oreder</a></div>
       </div>
   
       <nav class='nav header__nav'>
         <ul class='nav__list'>
           <li class='nav__item nav__item_active'>Home</li>
-          <li class='nav__item'><a href="#" class='nav__link'>About Us</a></li>
-          <li class='nav__item'><a href="#" class='nav__link'>Gallery</a></li>
-          <li class='nav__item'><a href="#" class='nav__link'>Testimonials</a></li>
-          <li class='nav__item'><a href="#" class='nav__link'>Contacts</a></li>
+          <li class='nav__item'><a href="#about"  class='nav__link'>About Us</a></li>
+          <li class='nav__item'><a href="#gallary" class='nav__link'>Gallery</a></li>
+          <li class='nav__item'><a href="#testimonials" class='nav__link'>Testimonials</a></li>
+          <li class='nav__item'><a href="#contacts" class='nav__link'>Contacts</a></li>
         </ul>
       </nav>
     </header>
 
     <main class='main'>
-
+      <a name='about'></a>
       <section class='section'>
-        <div class='info'>  
-          <h1 class='info__heading'>Miami <strong> best </strong> Real estate <a href="#">here</a> </h1>
+        <div class='info'>
+          <h1 class='info__heading' ></a>Miami <strong> best </strong> Real estate <a href="#">here</a> </h1>
           <div class='info__text'>
             <p><strong> Over 50 years experience in love.</strong> <br>Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the music of the early twentieth century, microforms, found a distant historical.</p>
             <p>The market leader in real estate since 2003.<br>Awards Real Estate Company, 2010, 2011, 2013.<br>More than 200 satisfied customers premium segment.<br>We focus only on new buildings and high-level doskanalno know this area better than other specialists.<br>Working directly with developers - so have more useful information about the profitable deals. </p>
@@ -41,7 +42,7 @@
       </section>
 
       <section class='section'>
-        <h2 class='section__heading'> Gallary <span class='heading__crown'></span></h2>
+        <h2 class='section__heading'><a name="gallary"></a>Gallary <span class='heading__crown'></span></h2>
           <div class='photos photos_whide_left'>
             <img src="images/photos/1.jpg" alt="" class='photos__img'>
             <img src="images/photos/2.jpg" alt="" class='photos__img'>
@@ -64,7 +65,7 @@
       </section>
 
       <section class='section'>
-        <h2 class='section__heading'> Consultation <span class='heading__crown'></span></h2>
+        <h2 class='section__heading'>Consultation <span class='heading__crown'></span></h2>
         <div class='consultation'>
 
           <div class='consultation__text'>
@@ -76,13 +77,13 @@
             <label class="form__item"><input class="input form__input" type="text" name='name' placeholder="Name"></label>
             <label class="form__item"><input class="input form__input" type="text" name='phone' placeholder="Phone"></label>
             <label class="form__item"><input class="input form__input" type="text" name='email' placeholder="Email"></label>
-            <button class='button form__button'>Consultation</button>
+            <button class='button form__button' type='submit'>Consultation</button>
           </form>
         </div>
       </section>
-
+      
       <section class='section'>
-        <h2 class='section__heading'>Testimonials<span class='heading__crown'></span></h2>
+        <h2 class='section__heading'><a name="testimonials"></a>Testimonials<span class='heading__crown'></span></h2>
         
         <div class='testimonials'>
           <div class='person'>
@@ -108,7 +109,7 @@
 
 
       <section class='section'>
-        <h2 class='section__heading'>Contact us<span class='heading__crown'></span></h2>
+        <h2 class='section__heading'><a name='contacts'></a> Contact us<span class='heading__crown'></span></h2>
         <div class='contacts'>
         <div class='contacts__text'>
           <p class='contacts__info'><a href="mailto:hello@miami.com" class="link">Hello@miami.com</a><br>+1 234 555-55-55</p>
@@ -119,7 +120,7 @@
           <label class="form__item"><input class="input form__input" type="text" name='name' placeholder="Name"></label>
           <label class="form__item"><input class="input form__input" type="text" name='phone' placeholder="Phone"></label>
           <label class="form__item"><textarea class="input form__textarea form__input" type="text" name='massage' placeholder="Massage"></textarea></label>
-          <button class='button form__button'>Contact Us</button>
+          <button class='button form__button' type='submit'>Contact Us</button>
         </form>
         </div>
       </section>
@@ -127,14 +128,11 @@
 
       
       <footer class='footer'>
-        <img class='footer__img' alt="">
-        <img class='logo footer__logo' href="./images/logo.png"></img>
+        <img class='footer__img'>
+        <div class='logo footer__logo' ></div>
       </footer>
     
     </main>
-
-
-
 
 
     <script type="text/javascript" src="scripts/main.js"></script>
