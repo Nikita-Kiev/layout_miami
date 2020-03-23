@@ -301,6 +301,11 @@ html, body, ul, li, button, input, textarea, button {
     font-weight: 500;
     font-size: 14px;
     line-height: 36px; }
+  .form input::-webkit-outer-spin-button,
+  .form input::-webkit-inner-spin-button {
+    -webkit-appearance: none; }
+  .form input[type='number'] {
+    -moz-appearance: textfield; }
   .form__textarea {
     height: 156px;
     resize: none; }
